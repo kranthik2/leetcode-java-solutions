@@ -1,4 +1,4 @@
-public class 75-SortColors{
+public class SortColors{
 
       public void sortColors(int[] nums) {
         int low = 0, mid = 0, high = nums.length - 1;
