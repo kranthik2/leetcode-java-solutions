@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class TwoSum{
   private static int[] EMPTY_ARRAY = {};
   
