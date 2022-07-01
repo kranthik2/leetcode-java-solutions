@@ -1,14 +1,14 @@
 public class ValidAnagram{
 
     public boolean isAnagram(String s, String t){
-        if(s == null || s.length == 0){
+        if(s == null || s.length() == 0){
             return false;
         }
         char[] letters = new char[128];
         for(char c : s.toCharArray()){
             letters[c]++;
         }
-        for(char c : t.toCharArray){
+        for(char c : t.toCharArray()){
             letters[c]--;
         }
 
