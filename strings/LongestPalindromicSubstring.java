@@ -1,0 +1,33 @@
+
+public class LongestPalindromicSubstring{
+    
+    private static final String EMPTY_STRING="";  
+  
+    public String solution(String s){
+      if(s == null || s.length() == 0){
+        return EMPTY_STRING;
+      }
+      int start = 0, end = 0;
+      for(int i = 0; i < s.length(); i++){
+        int len1 = getSubStringLength(s,i,i);
+        int len2 = getSubStringLength(s,i,i+1);
+        int len = Math.max(len1, len2);
+        
+        if(len > end - start){
+            start = i - (len-1)/2;
+            end = i + len/2;
+        }
+      }
+      return s.substring(start, end+1);
+    }
+  
+  private int getSubStringLength(String s, int left, int right){
+    if(s == null || left > right){ return 0; }
+    
+    while( left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)){
+      left--;
+      right++;
+    }
+    return right-left-1; 
+  }
+}
