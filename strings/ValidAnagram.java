@@ -8,7 +8,7 @@ public class ValidAnagram{
         for(char c : s.toCharArray()){
             letters[c]++;
         }
-        for(char c : to.toCharArray){
+        for(char c : t.toCharArray){
             letters[c]--;
         }
 
