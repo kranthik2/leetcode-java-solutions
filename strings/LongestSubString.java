@@ -3,6 +3,13 @@
 */
 import java.util.HashSet;
 
+/***
+* This solution similar to sliding window solution.
+* 1) start two pointers from begining of string
+* 2) check in set, if not dupicate, store non duplicate value in set 
+* 3) move pointer to next and compare size of set and max so far, set which ever is max
+* 4) if set contains key, you remove duplicate and move left pointer to next character.
+*/
 public class LongestSubString{
   public int solution(String s){
     int left=0, right=0;
