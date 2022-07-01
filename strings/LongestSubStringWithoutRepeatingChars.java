@@ -11,7 +11,7 @@ import java.util.HashSet;
 * 4) if set contains key, you remove duplicate and move left pointer to next character.
 * 5) repeat steps 2 to 4 until right pointer reaches end of string
 */
-public class LongestSubString{
+public class LongestSubStringWithoutRepeatingChars{
   public int solution(String s){
     int left=0, right=0;
     int max = 0;
@@ -30,6 +30,6 @@ public class LongestSubString{
   }
          
   public static main(String[] args){
-    System.out.println(new LongestSubString().solution("abcabcdd"));
+    System.out.println(new LongestSubStringWithoutRepeatingChars().solution("abcabcdd"));
   }
 }
