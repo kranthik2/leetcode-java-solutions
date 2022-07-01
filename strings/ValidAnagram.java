@@ -1,7 +1,7 @@
 public class ValidAnagram{
 
     public boolean isAnagram(String s, String t){
-        if(s == null || s.length() == 0){
+        if(s == null || t == null || s.length() != t.length()){
             return false;
         }
         char[] letters = new char[128];
