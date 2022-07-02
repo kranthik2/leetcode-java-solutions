@@ -1,3 +1,5 @@
+package trees;
+
 public class LowestCommonAncestor {
     public TreeNode solution(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null) {
