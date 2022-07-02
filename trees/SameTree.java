@@ -1,6 +1,7 @@
 package trees;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class SameTree {
@@ -27,9 +28,7 @@ public class SameTree {
         if (a == null || b == null) {
             return false;
         }
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(a);
-        queue.offer(b);
+        Queue<TreeNode> queue = new LinkedList<>(List.of(a, b));
         while (!queue.isEmpty()) {
             TreeNode first = queue.poll();
             TreeNode second = queue.poll();
