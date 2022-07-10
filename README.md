@@ -1,2 +1,2 @@
-# blind75-java-solutions
-blind75 java solutions
+# leetcode-java-solutions
+leetcode java solutions
